@@ -4,8 +4,8 @@
     "description": "",
     "main": "backend.test.js",
     "scripts": {
-        "frontend": "cd frontend && npm i && react-scripts start",
-        "start": "cd backend && npm i && node backend.js"
+        "frontend": "cd molecuul-frontend && npm i && react-scripts start",
+        "start": "cd molecuul-backend && npm i && node backend.js"
     },
     "author": "",
     "license": "ISC",
