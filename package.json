@@ -4,8 +4,9 @@
     "description": "",
     "main": "backend.test.js",
     "scripts": {
+        "start": "cd molecuul-backend && npm i && node backend.js",
         "frontend": "cd molecuul-frontend && npm i && react-scripts start",
-        "start": "cd molecuul-backend && npm i && node backend.js"
+        "heroku-postbuild": "cd molecuul-frontend && npm install && npm run build"
     },
     "author": "",
     "license": "ISC",
