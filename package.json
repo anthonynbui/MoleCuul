@@ -4,10 +4,8 @@
     "description": "",
     "main": "backend.test.js",
     "scripts": {
-        "test": "jest --detectOpenHandles",
-        "dev": "nodemon backend.js",
-        "start": "node backend.js",
-        "coverage": "jest --collectCoverage --detectOpenHandles"
+        "frontend": "cd frontend && npm i && react-scripts start",
+        "start": "cd backend && npm i && node backend.js"
     },
     "author": "",
     "license": "ISC",
