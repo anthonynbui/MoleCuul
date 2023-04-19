@@ -1,11 +1,16 @@
 {
-    "name": "molecuul_backend",
+    "name": "molecuul",
     "version": "1.0.0",
     "description": "",
     "main": "backend.test.js",
     "scripts": {
-        "frontend": "cd frontend && npm i && react-scripts start",
-        "start": "cd backend && npm i && node backend.js"
+        "start": "cd molecuul-frontenfd && react-scripts start",
+        "dev": "nodemon server.js",
+        "client-install": "cd molecuul-backend && npm install",
+        "client": "npm start --prefix client",
+        "build": "npm run build --prefix client",
+        "heroku-postbuild": "npm run build",
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "",
     "license": "ISC",
