@@ -14,6 +14,11 @@ app.get('/', (req, res) => {
   res.send('Hello World!');
 });
 
+app.use(express.static(path.join(__dirname, 'client/build')));
+app.get('*', (req, res) => { 
+  res.sendFile(path.join(__dirname + '/client/build/index.html')) 
+});
+
 app.get('/elements', async (req, res) => {
     const name = req.query['name'];
     try {
